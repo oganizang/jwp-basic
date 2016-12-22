@@ -13,11 +13,9 @@ public class DataBase {
     public static void addUser(User user) {
         users.put(user.getUserId(), user);
     }
-
     public static User findUserById(String userId) {
         return users.get(userId);
     }
-
     public static Collection<User> findAll() {
         return users.values();
     }
