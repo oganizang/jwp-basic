@@ -13,6 +13,7 @@ public class DataBase {
     public static void addUser(User user) {
         users.put(user.getUserId(), user);
     }
+<<<<<<< HEAD
     public static User findUserById(String userId) {
         return users.get(userId);
     }
@@ -21,3 +22,14 @@ public class DataBase {
     }
     // db test
 }
+=======
+
+    public static User findUserById(String userId) {
+        return users.get(userId);
+    }
+
+    public static Collection<User> findAll() {
+        return users.values();
+    }
+}
+>>>>>>> 41636796104502df7834539f63bb2c32fe35f004
